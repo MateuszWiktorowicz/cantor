@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator wymiany walut</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/cantorContainer.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:wght@300&display=swap"
+        rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="cantorContainer">
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <Legend class="form__legend">Kalkulator wymiany waluty</Legend>
+                <p>
+                    <label>
+
+                        <span class="form__labelText">
+                            Waluta:
+                        </span>
+                        <select class="form__field js-currency" name="currency">
+                            <option value="euro">Euro</option>
+                            <option value="USD">USD</option>
+                        </select>
+
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__labelText">
+                            Wpłacasz (PLN):
+                        </span>
+                        <input class="form__field js-payment" type="number" required min="0" step="0.01">
+                    </label>
+                </p>
+            </fieldset>
+            <button class="form__button">Oblicz</button>
+        </form>
+        <p>
+            Otrzymujesz: <span class="js-exchange">N/A</span>
+
+        </p>
+    </div>
+</body>
+
+</html>
