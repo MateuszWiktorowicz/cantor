@@ -7,6 +7,12 @@ html {
 }
 
 .body {
+
     margin: 0 auto;
     font-family: "lato", sans-serif;
+    background-image: url("../image/laptop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
 }
