@@ -15,4 +15,8 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
